@@ -6,7 +6,7 @@
 //9012 -> 12
 
 Console.WriteLine("Введите число: ");
-int numbers = Convert.ToInt32(Console.ReadLine());// 452/10
+int numbers = Convert.ToInt32(Console.ReadLine());//452
 
 int SumNumbers(int numbers)
 {
@@ -15,7 +15,7 @@ int SumNumbers(int numbers)
     int sum = 0;
     while(numbers > 0)
         {
-            result = numbers % 10;//452 % 10 = 2
+            result = numbers % 10;//452 % 10 = 2result
             sum = sum + result;// 2 + 0 = 2(sum)
             numbers = numbers / 10;
         } 
@@ -24,8 +24,23 @@ int SumNumbers(int numbers)
 }
 Console.WriteLine(SumNumbers(numbers));
 
+/*Console.WriteLine("Введите число: ");
+int numbers = Convert.ToInt32(Console.ReadLine());//452
 
+int SumNumbers(int numbers)
+{
+    int result = 0;
+    int sum = numbers;
+    for (int i = 0; i < numbers.ToString().Length; i++)
+    {
+        result = result + sum % 10;
+        sum = sum / 10; 
+    }    
+    return result;
 
+}
+Console.WriteLine(SumNumbers(numbers));
+*/
 
 
 
